@@ -16,7 +16,7 @@ jobs:
         run: npm install
 
       - name: Install browsers
-        run:  npx playwright install
+        run:  npm i playwright-chromium
 
       - name: Run tests
         run: npx playwright test
