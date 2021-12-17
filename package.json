@@ -1,0 +1,21 @@
+{
+  "name": "playwrightdemo",
+  "version": "1.0.0",
+  "description": "playwright tests",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VadimNastoyashchy/playwright_demo.git"
+  },
+  "author": "Vadym Nastoiashchyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VadimNastoyashchy/playwright_demo/issues"
+  },
+  "homepage": "https://github.com/VadimNastoyashchy/playwright_demo#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.17.1"
+  }
+}
