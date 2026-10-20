@@ -1,22 +1,25 @@
 name: Playwright Tests
 on:
-  [ workflow_dispatch ]
+  push:
+  pull_request:
+  workflow_dispatch:
 jobs:
   e2e-tests:
-    runs-on: ubuntu-latest # or macos-latest, windows-latest
+    runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v1
-
-      - uses: microsoft/playwright-github-action@v1
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Install browsers
-        run:  npm i playwright-chromium
+        run: npx playwright install --with-deps chromium
 
       - name: Run tests
-        run: npx playwright test
+        run: npm test
