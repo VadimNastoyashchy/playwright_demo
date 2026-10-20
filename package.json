@@ -20,6 +20,6 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.64.1",
-    "@therootsoft/playwright-github-actions-reporter": "^1.0.2"
+    "@therootsoft/playwright-github-actions-reporter": "^1.0.3"
   }
 }
