@@ -5,7 +5,7 @@ const config: PlaywrightTestConfig = {
     retries: process.env.CI ? 2 : 0,
     reporter: [
         ['list'],
-        ['@therootsoft/playwright-github-actions-reporter'],
+        ['@packageio/playwright-github-actions-reporter'],
     ],
     use: {
         trace: 'on-first-retry',
